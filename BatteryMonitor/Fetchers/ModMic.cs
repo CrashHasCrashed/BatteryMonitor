@@ -9,7 +9,7 @@ namespace BatteryMonitor.Fetchers;
 
 public sealed class ModMic : BatteryLevelFetcher, IDisposable
 {
-    private const double BatteryLifeHours = 8.0;
+    private const double BatteryLifeHours = 12.0;
     private const double DrainPerSecond = 100.0 / (BatteryLifeHours * 3600.0); // 8 hours = 36000 seconds
     private const string SaveFilePath = @"C:\BatteryMonitor\MicBatteryState.json";
 

@@ -22,7 +22,7 @@ static class Program
             { "ModMic", micFetcher },
         };
 
-        _ = new OnDisabledWarning(micFetcher, 50);
+        _ = new OnDisabledWarning(micFetcher, 30);
 
         using var trayManager = new TrayIconManager(BatteryLevelFetchers);
         Application.Run();
